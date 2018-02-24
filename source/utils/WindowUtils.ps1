@@ -121,6 +121,7 @@
         }
     }
 }
+
 Function Get-Window {
     <#
         .SYNOPSIS
