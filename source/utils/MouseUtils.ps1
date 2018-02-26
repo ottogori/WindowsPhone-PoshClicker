@@ -1,13 +1,26 @@
-﻿function Get-Cursor{
-    #GET CURSOR
-    Add-Type -AssemblyName System.Windows.Forms
-    $X = [System.Windows.Forms.Cursor]::Position.X
-    $Y = [System.Windows.Forms.Cursor]::Position.Y
-    Write-Output "X: $X | Y: $Y"
-}
-#get-cursor
+﻿function Click-MouseButton{
+<#
+.SYNOPSIS
+    Performa mouse click
 
-function Click-MouseButton{
+.DESCRIPTION
+    Execute one of the 3 possible mouse clicks directly.
+
+.PARAMETER Button
+    Determine the button the robot sould press
+
+.NOTES
+    Name: Click-MouuseButton
+    Author: Otto Gori
+    Version History - Initial build
+
+.OUTPUT
+    System.Automation :: mouse_event
+
+.EXAMPLE
+    Click-MouseButton -Button left
+        
+#>
 param(
     [string]$Button
 )
@@ -38,7 +51,34 @@ param(
     }
 }
 
+
+
 function Click-OnPosition{
+<#
+.SYNOPSIS
+    Performa a left button mouse click
+
+.DESCRIPTION
+    Execute a left button mouse click in a determined position
+
+.PARAMETER mouseX
+    Determine the X coordinate
+
+.PARAMETER mouseY
+    Determine the Y coordinate
+
+.NOTES
+    Name: Click-OnPosition
+    Author: Otto Gori
+    Version History - Initial build
+
+.OUTPUT
+    System.Automation :: mouse_event
+
+.EXAMPLE
+    Click-MouseButton -Button left
+        
+#>
 param(
 [int]$mouseX,
 [int]$mouseY,
@@ -49,3 +89,13 @@ param(
     [Windows.Forms.Cursor]::Position = "$mouseX,$mouseY"
     Click-MouseButton -Button left
 }
+
+#Just a directly solution to determine the cursor position
+function Get-Cursor{
+    #GET CURSOR
+    Add-Type -AssemblyName System.Windows.Forms
+    $X = [System.Windows.Forms.Cursor]::Position.X
+    $Y = [System.Windows.Forms.Cursor]::Position.Y
+    Write-Output "X: $X | Y: $Y"
+}
+#get-cursor
