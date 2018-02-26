@@ -28,10 +28,8 @@
 
         .NOTES
             Name: Set-Window
-            Author: Boe Prox
-            Version History
-                1.0//Boe Prox - 11/24/2015
-                    - Initial build
+            Author: Otto Gori
+            Version History - Initial build
 
         .OUTPUT
             System.Automation.WindowInfo
@@ -137,9 +135,8 @@ Function Get-Window {
 
         .NOTES
             Name: Get-Window
-            Author: Boe Prox
-            Version History
-                1.0//Boe Prox - 11/20/2015
+            Author: Otto Gori
+            Version History 
                     - Initial build
 
         .OUTPUT

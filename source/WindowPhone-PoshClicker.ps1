@@ -20,9 +20,18 @@ $screen.Height
 get-cursor
 
 Click-OnPosition -mouseX 270 -mouseY 900 -btn left
+
+Start-Sleep -Seconds 3
+
 Click-OnPosition -mouseX 125 -mouseY 380 -btn left #WhatsApp
+
+Start-Sleep -Seconds 3
 Click-OnPosition -mouseX 470 -mouseY 835 -btn left #Opt
+
+Start-Sleep -Seconds 3
 Click-OnPosition -mouseX 75 -mouseY 575 -btn left #Broadlist
+
+Start-Sleep -Seconds 3e
 Click-OnPosition -mouseX 275 -mouseY 850 -btn left #NewBtn
 
 
@@ -33,5 +42,6 @@ param(
 [int]$iAddX,
 [int]$iAddY
 )
-
+# TO BE DONE
 }
+

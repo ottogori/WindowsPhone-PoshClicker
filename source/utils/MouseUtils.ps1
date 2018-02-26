@@ -5,6 +5,7 @@
     $Y = [System.Windows.Forms.Cursor]::Position.Y
     Write-Output "X: $X | Y: $Y"
 }
+#get-cursor
 
 function Click-MouseButton{
 param(
