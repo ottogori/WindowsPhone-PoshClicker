@@ -1,6 +1,30 @@
 ﻿. "$PSScriptRoot\utils\WindowUtils.ps1"
 . "$PSScriptRoot\utils\MouseUtils.ps1"
 . "$PSScriptRoot\utils\setupUtils.ps1"
+. "$PSScriptRoot\utils\CoreUtils.ps1"
+
+
+# Set power shell stream handling preferences
+$VerbosePreference = "Continue"
+$DebugPreference = "SilentlyContinue"
+$ErrorActionPreference = "Stop"
+
+# Define global variables
+$global:stepSetup = 1
+$global:stepExecCmd = 2
+$global:stepValidate = 3
+$global:totalSteps = 3
+
+
+<#
+
+!!!!!!!!
+
+During the beta state os this project, this main session shall be used for play/try purposes, it will change a lot, so don't expect much good writen code in here.
+
+!!!!!!!!
+
+#>
 
 
 Make-Setup -iniX 0 -iniY 0 -iHeight 1050 -iWidth 550
@@ -31,17 +55,10 @@ Click-OnPosition -mouseX 470 -mouseY 835 -btn left #Opt
 Start-Sleep -Seconds 3
 Click-OnPosition -mouseX 75 -mouseY 575 -btn left #Broadlist
 
-Start-Sleep -Seconds 3e
+Start-Sleep -Seconds 3
 Click-OnPosition -mouseX 275 -mouseY 850 -btn left #NewBtn
 
 
-function Calc-WhereToClick{
-param(
-[int]$iWindowTopLeftX,
-[int]$iWindowTopLeftY,
-[int]$iAddX,
-[int]$iAddY
-)
-# TO BE DONE
-}
+
+
 
