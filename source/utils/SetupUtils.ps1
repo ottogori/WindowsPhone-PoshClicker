@@ -46,3 +46,11 @@ param(
 
     [System.Windows.Forms.SendKeys]::SendWait("e")
 }
+
+function Load-DeviceConfig{
+param(
+    [string]$configFilepath
+)
+    $json = (Get-Content -Raw -Path $configFilepath | ConvertFrom-Json)
+    return $json
+}

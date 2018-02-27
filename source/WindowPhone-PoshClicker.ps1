@@ -16,6 +16,10 @@ $global:stepValidate = 3
 $global:totalSteps = 3
 
 
+$jsonConfig = Load-DeviceConfig 'D:\source\repos\WindowsPhone-PoshClicker\config\mapping.json'
+
+$jsonConfig.Lumia640XL.apps
+
 <#
 
 !!!!!!!!
@@ -57,4 +61,11 @@ Click-OnPosition -mouseX 75 -mouseY 575 -btn left #Broadlist
 
 Start-Sleep -Seconds 3
 Click-OnPosition -mouseX 275 -mouseY 850 -btn left #NewBtn
+
+function Type-OnPhoneKeyboard{
+param(
+    [string]$sToType
+)
+
+}
 

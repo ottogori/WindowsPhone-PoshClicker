@@ -1,97 +1,114 @@
 {
-    "Lumia640XL":{
-        "expectedWindowHeight":"1050",
-        "expectedWindowWidth":"550",
-        "phoneCommands":{
-            "windowsbutton":{
+    "Lumia640XL": {
+        "expectedWindowHeight": "1050",
+        "expectedWindowWidth": "550",
+        "phoneCommands": {
+            "windowsbutton": {
                 "x": "00",
                 "y": "00"
             },
-            "search":{
-                
-            },
-            "back":{
-
-            }
+            "search": {},
+            "back": {}
         },
-        "apps":{
-                "whatsapp":{
-                    "cord":{
-                        "x":"00",
-                        "y":"00"
+        "apps": {
+            "whatsapp": {
+                "cord": {
+                    "x": "00",
+                    "y": "00"
+                },
+                "onapp": {
+                    "chats": {
+                        "cord": {
+                            "x": "00",
+                            "y": "00"
+                        }
                     },
-                    "onapp":{
-                        "chats":{
-                            "cord":{
-                                "x":"00",
-                                "y":"00"
-                            }
-
+                    "calls": {
+                        "cord": {
+                            "x": "00",
+                            "y": "00"
+                        }
+                    },
+                    "status": {
+                        "cord": {
+                            "x": "00",
+                            "y": "00"
+                        }
+                    },
+                    "camera": {
+                        "cord": {
+                            "x": "00",
+                            "y": "00"
+                        }
+                    },
+                    "search": {
+                        "cord": {
+                            "x": "00",
+                            "y": "00"
+                        }
+                    },
+                    "add": {
+                        "cord": {
+                            "x": "250",
+                            "y": "680"
                         },
-                        "calls":{
-                            "cord":{
-                                "x":"00",
-                                "y":"00"
-                            }
+                        "newchat": {
+                            "x": "60",
+                            "y": "160"
                         },
-                        "status":{
-                            "cord":{
-                                "x":"00",
-                                "y":"00"
-                            }
+                        "contact": {
+                            "x": "60",
+                            "y": "160"
+                        }
+                    },
+                    "group": {
+                        "cord": {
+                            "x": "70",
+                            "y": "245"
+                        }
+                    },
+                    "keyboard": {
+                        "txtarea": {
+                            "x": "90",
+                            "y": "685"
                         },
-                        "camera":{
-                            "cord":{
-                                "x":"00",
-                                "y":"00"
-                            }
-                        },
-                        "search":{
-                            "cord":{
-                                "x":"00",
-                                "y":"00"
-                            }
-                        },
-                        "add":{
-                            "cord":{
-                                "x":"250",
-                                "y":"680"
-                            },
-                            "newchat":{
-                                "x":"60",
-                                "y":"160" 
-                            },
-                            "contact":{
-                                "x":"60",
-                                "y":"160" 
-                            }
-                        },
-                        "group":{
-                            "cord":{
-                                "x":"70",
-                                "y":"245"
-                            }
-                        },
-                        "keyboard":{
-                            "layouts":{
-                                "default":{
-                                    "keys":{
-                                        "key":{
-                                            "a":{
-                                                "preact":{
-
-                                                },
-                                                "x":"00",
-                                                "y":"00",
-                                                "posact":{
-
-                                                }
-                                            }    
-                                        }    
+                        "layouts": {
+                            "default": {
+                                "keys": {
+                                    "key": {
+                                        "a": {
+                                            "preact": {},
+                                            "x": "55",
+                                            "y": "570",
+                                            "posact": {}
+                                        },
+                                        "h": {
+                                            "preact": {},
+                                            "x": "235",
+                                            "y": "570",
+                                            "posact": {}
+                                        },
+                                        "e": {
+                                            "preact": {},
+                                            "x": "130",
+                                            "y": "510",
+                                            "posact": {}
+                                        },
+                                        "l": {
+                                            "preact": {},
+                                            "x": "345",
+                                            "y": "570",
+                                            "posact": {}
+                                        },
+                                        "o": {
+                                            "preact": {},
+                                            "x": "345",
+                                            "y": "510",
+                                            "posact": {}
+                                        }
                                     }
                                 }
                             }
-
                         }
                     }
                 }
