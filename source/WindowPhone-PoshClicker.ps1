@@ -58,7 +58,3 @@ Click-OnPosition -mouseX 75 -mouseY 575 -btn left #Broadlist
 Start-Sleep -Seconds 3
 Click-OnPosition -mouseX 275 -mouseY 850 -btn left #NewBtn
 
-
-
-
-
